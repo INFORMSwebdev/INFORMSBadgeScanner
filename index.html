@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      @import url('//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css');
+      @import url('css/jquery.mobile.min.css');
+      @import url('css/jquery.mobile.theme.min.css');
+      @import url('css/jquery.mobile.structure.min.css');
+      @import url('css/style.css');
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
+
+    <script type="text/javascript" src="js/globals_general.js"></script>
+    <script type="text/javascript" src="js/scripts_badge.js"></script>
+    <script type="text/javascript" src="js/scripts_common.js"></script>
+    <script type="text/javascript" src="js/scripts_createtables.js"></script>
+    <script type="text/javascript" src="js/scripts_init.js"></script>
+  </head>
+
+  <body>
+ 
+    <div data-role="page" id="main_page">
+      <div data-role="header" data-theme="a">
+        <div class="pageheader"><img src="images/informs-logo.png" width="100"></div>
+      </div>
+      <div data-role="content">
+        <div id='SCAN'></div>
+        <div id="EMAIL_SECTION"></div>
+        <div id="collected_card_list"></div>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <div class="message"></div>
+        <div class="pagefooter">
+        </div>
+      </div>
+    </div><!-- page -->
+    
+    <div data-role="page" id="scanner_page">
+      <div data-role="header" data-position="fixed">
+        <a href="#main_page" data-icon="home" data-iconpos="left" class="ui-btn-left"></a>
+        <div class="pageheader">SCAN</div>
+      </div>
+      <div data-role="content">
+        <div id="p"></div>
+        <div id="backtomenu"></div>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <div class="message"></div>
+        <div class="pagefooter">
+        </div>
+      </div>
+    </div><!-- page -->
+    
+    <div data-role="page" id="editcontact_page">
+      <div data-role="header" data-position="fixed">
+        <a href="#main_page" data-icon="home" data-iconpos="left" class="ui-btn-left"></a>
+        <div class="pageheader">EDIT</div>
+      </div>
+      <div data-role="content">
+        <div id="editform"></div>
+        <div id="editmsg"></div>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <div class="message"></div>
+        <div class="pagefooter">
+        </div>
+      </div>
+    </div><!-- page -->
+    
+  </body>
+</html>
