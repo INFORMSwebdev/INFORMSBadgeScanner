@@ -282,7 +282,7 @@ function editField(id, field, value)
        var sql = "UPDATE CONTACT SET "+field+" = '"+value+"', last_updated = '"+currdate+' '+currtime+
                  "' WHERE enc_contact_cust_id = '"+id+"'";
        tx.executeSql( sql, [], function(tx, result) {
-          $('#editmsg').html('<div>Change saved</div>');
+          $('#editmsg').html('Change saved');
        }, function() { alert('ERROR: '+field+' not changed to '+value); });
   });
 }
@@ -298,18 +298,20 @@ function getEditCardScreen(id)
       if( result.rows.length == 1 )
       {
         row = result.rows.item(0);
-        display += "<div class='smallbox lightblue'><div data-role='fieldcontain'>";
-        display += "<h2>"+row.first_name+' '+row.last_name+"</h2>";
         var email = row.email;
         if( row.email == NA ) email = '';
-        display += "<div>EMAIL:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"email\", this.value)' value='"+email+"'></div>";
-        display += "<div>ORGANIZATION:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"organization\", this.value)' value='"+row.organization+"'></div>";
-        display += "<div>TITLE:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"title\", this.value)' value='"+row.title+"'></div>";
-        display += "<div>CITY:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"city\", this.value)' value='"+row.city+"'></div>";
-        display += "<div>STATE:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"state\", this.value)' value='"+row.state+"'></div>";
-        display += "<div>COUNTRY:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"country\", this.value)' value='"+row.country+"'></div>";
-        display += "<div>NOTE:</div><div><textarea cols='32' rows='7' onBlur='editField(\""+id+"\", \"note\", this.value)'>"+row.note+"</textarea></div>";
-        display += "</div></div>";
+
+        display += "<div id='editmsg'></div>"+
+          "<div>"+
+            "<h2>"+row.first_name+' '+row.last_name+"</h2>"+
+            "<div>EMAIL:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"email\", this.value)' value='"+email+"'></div>"+
+            "<div>ORGANIZATION:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"organization\", this.value)' value='"+row.organization+"'></div>"+
+            "<div>TITLE:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"title\", this.value)' value='"+row.title+"'></div>"+
+            "<div>CITY:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"city\", this.value)' value='"+row.city+"'></div>"+
+            "<div>STATE:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"state\", this.value)' value='"+row.state+"'></div>"+
+            "<div>COUNTRY:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"country\", this.value)' value='"+row.country+"'></div>"+
+            "<div>NOTE:</div><div><textarea cols='32' rows='7' onBlur='editField(\""+id+"\", \"note\", this.value)'>"+row.note+"</textarea></div>"+
+          "</div>";
         $('#editform').html(display);
       }
       else gotopage('main_page');
