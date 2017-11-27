@@ -260,7 +260,7 @@ function getRefreshButton(id)
 function getEditButton(id)
 {
    return '<div style="display:inline-block;width:66%;font-size:8pt;white-space:nowrap;text-align:right" onClick="getEditCardScreen(\''+id+'\')" id="EDIT'+id+'">'+
-             '<img src="'+APP_IMAGES_DIR+'/edit-contact-icon.png" style="width:15px"> Edit Contact'+
+             'Edit Contact'+
           '</div>';
 }
 
@@ -455,7 +455,6 @@ function displayContactActionButtons()
       }
       // if at least one contact exists, show the buttons that pertain to contacts
       else {
-        if( email_address == '' ) email_address = AMS_EMAIL;
         $('#EMAIL_SECTION').html(
           '<div class="scan_btn" onClick="toggleDisplay(\'EMAIL_FORM\')">Send contact info to ...</div>'+
           '<div id="EMAIL_FORM" class="hidden_details smallbox lightblue">'+
