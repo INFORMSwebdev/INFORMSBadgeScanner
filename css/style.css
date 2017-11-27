@@ -1,15 +1,8 @@
 body {
-background: #010135; /* Old browsers */
-background: -moz-linear-gradient(45deg,  #010135 0%, #010135 0%, #010135 0%, #010135 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#010135), color-stop(0%,#010135), color-stop(0%,#010135), color-stop(100%,#010135)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(45deg,  #010135 0%,#010135 0%,#010135 0%,#010135 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(45deg,  #010135 0%,#010135 0%,#010135 0%,#010135 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(45deg,  #010135 0%,#010135 0%,#010135 0%,#010135 100%); /* IE10+ */
-background: linear-gradient(45deg,  #010135 0%,#010135 0%,#010135 0%,#010135 100%); /* W3C */
-text-shadow:none;
-font-family:"Open Sans", sans-serif;
-font-weight:100;
-font-size:11pt;
+  text-shadow:none;
+  font-family:"Open Sans", sans-serif;
+  font-weight:100;
+  font-size:11pt;
 }
 
 input[type='radio'], input[type='checkbox'] {
@@ -133,6 +126,14 @@ a {
 .footer_icon {
   display:inline-block;
   text-align:center;
+}
+#editform {
+  margin-left: 5%;
+}
+#editmsg {
+  color:green;
+  padding:10px 10px 0 0;
+  float:right;
 }
 #LOGO_BTN {
   margin:0 28%;
