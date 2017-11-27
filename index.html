@@ -27,8 +27,9 @@
   <body>
  
     <div data-role="page" id="main_page">
-      <div data-role="header" data-theme="a">
-        <div class="pageheader"><img src="images/informs-logo.png" width="100"></div>
+      <div data-role="header" data-theme="b">
+        INFORMS Badge Reader
+        <a href="#info_page" data-icon="info" data-iconpos="right" class="ui-btn-right"></a>
       </div>
       <div data-role="content">
         <div id='SCAN'></div>
@@ -36,43 +37,47 @@
         <div id="collected_card_list"></div>
       </div>
       <div data-role="footer" data-position="fixed">
-        <div class="message"></div>
-        <div class="pagefooter">
-        </div>
       </div>
     </div><!-- page -->
     
     <div data-role="page" id="scanner_page">
-      <div data-role="header" data-position="fixed">
-        <a href="#main_page" data-icon="home" data-iconpos="left" class="ui-btn-left"></a>
-        <div class="pageheader">SCAN</div>
+      <div data-role="header" data-theme="b">
+        INFORMS Badge Reader
+        <a href="index.html" data-icon="home" data-iconpos="left" class="ui-btn-left"></a>
+        <a href="#info_page" data-icon="info" data-iconpos="right" class="ui-btn-right"></a>
       </div>
       <div data-role="content">
         <div id="p"></div>
         <div id="backtomenu"></div>
       </div>
       <div data-role="footer" data-position="fixed">
-        <div class="message"></div>
-        <div class="pagefooter">
-        </div>
       </div>
     </div><!-- page -->
     
     <div data-role="page" id="editcontact_page">
-      <div data-role="header" data-position="fixed">
-        <a href="#main_page" data-icon="home" data-iconpos="left" class="ui-btn-left"></a>
-        <div class="pageheader">EDIT</div>
+      <div data-role="header" data-theme="b">
+        INFORMS Badge Reader
+        <a href="index.html" data-icon="home" data-iconpos="left" class="ui-btn-left"></a>
+        <a href="#info_page" data-icon="info" data-iconpos="right" class="ui-btn-right"></a>
       </div>
       <div data-role="content">
         <div id="editform"></div>
-        <div id="editmsg"></div>
       </div>
       <div data-role="footer" data-position="fixed">
-        <div class="message"></div>
-        <div class="pagefooter">
-        </div>
       </div>
     </div><!-- page -->
     
+    <div data-role="page" id="info_page">
+      <div data-role="header" data-theme="b">
+        INFORMS Badge Reader
+        <a href="index.html" data-icon="home" data-iconpos="left" class="ui-btn-left"></a>
+      </div>
+      <div data-role="content">
+        The "INFORMS Badge Scanner" app was created and is owned by the Institute for Operations Research
+        and the Management Sciences (INFORMS).
+      </div>
+      <div data-role="footer" data-position="fixed">
+      </div>
+    </div><!-- page -->
   </body>
 </html>
