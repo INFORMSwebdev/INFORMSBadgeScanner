@@ -32,7 +32,3 @@ $(document).on('pagehide','#scanner_page',function() {
    if( $.mobile.activePage.attr("id") != "editcontact_page" ) $('#p').html('');
 });
 
-$(document).on('pageshow','#editcontact_page',function() {
-   showPageTitle('editcontact_page');
-});
-
