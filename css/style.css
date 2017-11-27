@@ -4,7 +4,6 @@ body {
   font-weight:100;
   font-size:11pt;
 }
-
 input[type='radio'], input[type='checkbox'] {
   transform: scale(1.3);
   margin-right:8px;
@@ -59,33 +58,10 @@ a {
    text-shadow:none;
 }
 
-.ui-page { background:transparent; }
+.ui-page { background:#f07602; color:white;}
 .ui-content { padding:0px; }
-/*.ui-header { text-align: center; }*/
-.ui-header .ui-btn { height: 18px; white-space:normal;}
-.ui-footer { vertical-align:middle; text-align: center;}
+.ui-header { text-align: center; }
 .ui-footer .ui-btn { height:inherit; white-space:normal;}
-
-.ui-grid-a { background:white; }
-.ui-grid-a .ui-block-a { width: 23%; font-size:21pt; color:#aaaaaa; padding:0 0 0 3px; border:0; text-align:center;}
-.ui-grid-a .ui-block-b { width: 67%; padding:2% 12% 0 2%; text-align:left;border:0;}
-.ui-grid-a .ui-block-c { width: 10%; text-align:center;border:0;}
-.ui-grid-a .ui-block-a, .ui-grid-a .ui-block-b, .ui-grid-a .ui-block-c { border-width: 1px 0 0 0; border-style: solid; border-color: #ddd; background-color:#ffffff;}
-
-.ui-grid-b .ui-block-a { width: 35%; text-align: right;}
-.ui-grid-b .ui-block-b { width: 65%; padding: 5px 5px 5px 10px}
-.ui-grid-b .ui-block-a, .ui-grid-b .ui-block-b { color:white; background:#888888;}
-
-.ui-grid-c { background:white; }
-.ui-grid-c .ui-block-a { width: 20%; padding:2px; border:0;}
-.ui-grid-c .ui-block-b { width: 65%; padding:0 5px 0; text-align:left; border:0;}
-.ui-grid-c .ui-block-c { width: 15%; padding:0 5px 0; text-align:center;}
-.ui-grid-c .ui-block-a, .ui-grid-c .ui-block-b, .ui-grid-c .ui-block-c { border-width: 1px 0 0 0; border-style: solid; border-color: #ddd; background-color:white;}
-
-.ui-grid-d { background:white; }
-.ui-grid-d .ui-block-a { width: 90%; padding:10px; text-align:left;}
-.ui-grid-d .ui-block-b { width: 10%; text-align:center;}
-.ui-grid-d .ui-block-a, .ui-grid-d .ui-block-b { border-width: 1px 0 0 0; border-style: solid; border-color: #ddd; background-color:#ffffff; vertical-align:middle;}
 
 .pageheader {
   text-align: center;
@@ -131,7 +107,7 @@ a {
   margin-left: 5%;
 }
 #editmsg {
-  color:green;
+  color:white;
   padding:10px 10px 0 0;
   float:right;
 }
