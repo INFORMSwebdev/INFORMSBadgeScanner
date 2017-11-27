@@ -337,7 +337,6 @@ function saveManualContact()
                   "'" + sql_prep($('#CARD_COUNTRY').val()) + "'," +
                   "'" + sql_prep($('#CARD_NOTE').val()) + "'," +
                   "''," +
-                  "-1," +
                   "'" + currdatetime + "'" +
                   " );";
 
