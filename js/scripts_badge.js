@@ -352,7 +352,7 @@ function getAddCardScreen()
   getCurrDate(); getCurrTime();
   var note = "Met on " + currdate + " at " + currtime.replace(/:..$/,'');
 
-  var display = "<div class='smallbox lightblue'><div data-role='fieldcontain'>";
+  var display = "<div class='smallbox'><div data-role='fieldcontain'>";
   display += "<div>FIRST NAME:</div><div><input type='text' size='30' id='CARD_FIRST_NAME'></div>";
   display += "<div>LAST NAME:</div><div><input type='text' size='30' id='CARD_LAST_NAME'></div>";
   display += "<div>EMAIL:</div><div><input type='text' size='30' id='CARD_EMAIL'></div>";
@@ -457,7 +457,7 @@ function displayContactActionButtons()
       else {
         $('#EMAIL_SECTION').html(
           '<div class="scan_btn" onClick="toggleDisplay(\'EMAIL_FORM\')">Send contact info to ...</div>'+
-          '<div id="EMAIL_FORM" class="hidden_details smallbox lightblue">'+
+          '<div id="EMAIL_FORM" class="hidden_details smallbox">'+
              '<input style="margin:5px;padding:10px;width:90%" id="EMAIL_ADDRESS" placeholder="Your email address" value="'+email_address+'" />'+
              '<SELECT name="email_format" style="margin:5px;padding:10px" id="FORMAT_CHOICES">'+
                   '<option value="">Choose format</option>'+
@@ -465,7 +465,7 @@ function displayContactActionButtons()
                   '<option value="csv">CSV (spreadsheet)</option>'+
                   '<option value="html">HTML (print format)</option>'+
              '</SELECT>'+
-             '<button onClick="emailCollectedCards($(\'#EMAIL_ADDRESS\').val(), $(\'#FORMAT_CHOICES\').val())" class="smallbox blue">SEND</button>'+
+             '<button onClick="emailCollectedCards($(\'#EMAIL_ADDRESS\').val(), $(\'#FORMAT_CHOICES\').val())" class="smallbox orange">SEND</button>'+
           '</div>');
       }
     });
