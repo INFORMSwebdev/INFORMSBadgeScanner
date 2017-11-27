@@ -27,9 +27,8 @@ var ajax_token = 'vBm7zPnRseKKf2La';
 
 var contact_fields = [ 'enc_contact_cust_id', 'first_name', 'last_name', 'email', 'organization', 'title', 'city', 'state', 'country', 'note', 'img_url', 'last_updated' ];
 
+var email_address = '';
+
 var ROOT_DIR = 'https://biblio.informs.org/mobile';
 var SCRIPTS_DIR = ROOT_DIR + '/scripts';
-var APP_IMAGES_DIR = 'images/app';
-var SYNC_CONTACTS_SCRIPT = SCRIPTS_DIR + '/sync_contacts.php';
-var GET_CONTACTS_SCRIPT = SCRIPTS_DIR + '/get_contacts.php';
-var DELETE_CONTACT_SCRIPT = SCRIPTS_DIR + '/delete_contact.php';
+var EMAIL_SCRIPT = SCRIPTS_DIR + '/email_contacts.php';
