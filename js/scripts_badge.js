@@ -180,20 +180,17 @@ function getContact(url)
       // so get the information from the remote script on the web server
       if( therows.length == 0 )
       {
-        try {
         $.ajax({
           dataType: "json",
           url: url+'&ibr=1',
           success: data_success,
-          error: function(err, txt) {
-                   alert("ERROR: Unable to get contact info for this badge: " + txt);
+          error: function(xhr, status, error) {
+                   //alert("ERROR: Unable to get contact info for this badge: " + txt);
+                   alert(JSON.parse(xhr.responseText));
                    if( MULTISCAN == false ) gotopage('main_page');
                                        else scan();
                 }
         });
-        } catch ( error ) {
-           alert(error);   
-        }
       }
       // if a row does exist in table for this q, the badge information has been scanned before (and is in the table)
       // so alert the user that the badge information already exists
@@ -219,7 +216,6 @@ function scan()
          // if successful, get text of the result and call get contact details
          function (result) {
            var url = result.text;
-             alert(url);
            getContact(url);
          },
          function (error) {
