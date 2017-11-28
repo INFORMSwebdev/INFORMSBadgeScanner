@@ -215,6 +215,7 @@ function scan()
          // if successful, get text of the result and call get contact details
          function (result) {
            var url = result.text;
+             alert(url);
            getContact(url);
          },
          function (error) {
