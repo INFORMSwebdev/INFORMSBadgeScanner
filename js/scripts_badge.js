@@ -186,8 +186,8 @@ function getContact(url)
           success: data_success,
           error: function(xhr, status, error) {
                    //alert("ERROR: Unable to get contact info for this badge: " + txt);
-                   var err = eval("(" + xhr.responseText + ")");
-                   alert(err.Message);
+                   //var err = eval("(" + xhr.responseText + ")");
+                   alert(xhr.responseText);
                    if( MULTISCAN == false ) gotopage('main_page');
                    else scan();
                 }
