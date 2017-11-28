@@ -18,9 +18,7 @@
     </author>
     
     <preference name='phonegap-version' value='cli-7.0.1' />
-    <plugin name="cordova-plugin-barcodescanner" source="npm">
-      <param name="CAMERA_USAGE_DESCRIPTION" value="To scan barcodes." />
-    </plugin>
+    <plugin name="cordova-plugin-barcodescanner" source="npm" />
     <gap:plugin name="cordova-plugin-whitelist" platform="android" source="npm" />
 
     <plugin name="cordova-plugin-media-capture" source="npm">
