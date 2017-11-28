@@ -17,8 +17,8 @@
         Institute for Operations Research and Management Sciences
     </author>
     
-    <preference name='phonegap-version' value='cli-7.0.1' />
-    <plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.0" />
+    <preference name='phonegap-version' value='cli-6.5.0' />
+    <plugin name="phonegap-plugin-barcodescanner" source="npm" />
     <gap:plugin name="cordova-plugin-whitelist" platform="android" source="npm" />
 
     <plugin name="cordova-plugin-media-capture" source="npm">
