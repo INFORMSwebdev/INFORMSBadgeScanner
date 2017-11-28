@@ -206,6 +206,7 @@ function getContact(url)
 // scan badge
 function scan()
 {
+  alert( "SCANTEST = " + SCANTEST );
   if( SCANTEST == true ) getContact("https://q.informs.org/?q=iLrHxdjxLZd4Cjsei\/QqMg==");
   else
   {
