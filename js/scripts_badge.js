@@ -206,20 +206,25 @@ function getContact(url)
 // scan badge
 function scan()
 {
-  alert( "SCANTEST = " + SCANTEST );
+
   if( SCANTEST == true ) getContact("https://q.informs.org/?q=iLrHxdjxLZd4Cjsei\/QqMg==");
   else
   {
-     cordova.plugins.barcodeScanner.scan(
-       // if successful, get text of the result and call get contact details
-       function (result) {
-         var url = result.text;
-         getContact(url);
-       },
-       function (error) {
-         alert("Scanning failed: " + error);
-       }
-     );
+    try {
+       cordova.plugins.barcodeScanner.scan(
+         // if successful, get text of the result and call get contact details
+         function (result) {
+           var url = result.text;
+           getContact(url);
+         },
+         function (error) {
+           alert("Scanning failed: " + error);
+         }
+       );
+     }
+     catch(error) {
+       alert( error );
+     }
   }
 }
 
