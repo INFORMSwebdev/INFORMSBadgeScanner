@@ -186,9 +186,10 @@ function getContact(url)
           success: data_success,
           error: function(xhr, status, error) {
                    //alert("ERROR: Unable to get contact info for this badge: " + txt);
-                   alert(JSON.parse(xhr.responseText));
+                   var err = eval("(" + xhr.responseText + ")");
+                   alert(err.Message);
                    if( MULTISCAN == false ) gotopage('main_page');
-                                       else scan();
+                   else scan();
                 }
         });
       }
