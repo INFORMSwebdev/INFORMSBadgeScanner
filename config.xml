@@ -18,7 +18,7 @@
     </author>
     
     <preference name='phonegap-version' value='cli-7.0.1' />
-    <plugin name="phonegap-plugin-barcodescanner" source="npm" />
+    <plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.0" />
     <gap:plugin name="cordova-plugin-whitelist" platform="android" source="npm" />
 
     <plugin name="cordova-plugin-media-capture" source="npm">
