@@ -266,7 +266,7 @@ function getRefreshButton(id)
 function getEditButton(id)
 {
    return '<div style="display:inline-block;width:66%;font-size:8pt;white-space:nowrap;text-align:right" onClick="getEditCardScreen(\''+id+'\')" id="EDIT'+id+'">'+
-             'Edit Contact'+
+             'Edit'+
           '</div>';
 }
 
@@ -377,7 +377,7 @@ function getAddCardScreen()
 function showCollectedCards()
 {
   db.transaction( function(tx) {
-       var sql = "SELECT * FROM CONTACT";
+       var sql = "SELECT * FROM CONTACT ORDER BY rowid DESC";
        tx.executeSql( sql, [], function(tx, result) {
          var therows = result.rows;
          var count = therows.length;
