@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "org.informs.badgescanner"
         versionCode = "14"
-        version     = "1.0.2" >
+        version     = "1.0.3" >
 
     <!-- versionCode is optional and Android only -->
 
@@ -30,6 +30,14 @@
        <variable name="CAMERA_USAGE_DESCRIPTION" value="Camera is used for scanning QR Codes." />
        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App does not access the library." />
     </plugin>
+
+    <gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
+       <string>Camera is used for scanning QR codes.</string>
+    </gap:config-file>
+
+    <gap:config-file platform="ios" parent="NSPhotoLibraryUsageDescription" overwrite="true">
+       <string>App does not use the library</string>
+    </gap:config-file>
 
 <!-- ICONS -->
 
