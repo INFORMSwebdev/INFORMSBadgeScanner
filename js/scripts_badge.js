@@ -250,22 +250,15 @@ function resetPage()
 // get delete HTML to be displayed for a card
 function getDeleteButton(id)
 {
-   return '<div style="display:inline-block;width:33%;font-size:8pt;text-align:left" onClick="if( confirm(\'Delete this card?\') ) { deleteCard(\''+id+'\'); }">'+
+   return '<div style="display:inline-block;text-align:left" onClick="if( confirm(\'Delete this card?\') ) { deleteCard(\''+id+'\'); }">'+
              'Delete'+
-          '</div>';
-}
-
-function getRefreshButton(id)
-{
-   return '<div style="display:inline-block;width:33%;font-size:8pt;text-align:center" onClick="deleteCard(\''+id+'\'); getContact(\'https://q.informs.org/?q='+id+'\');">'+
-             'Refresh this info'+
           '</div>';
 }
 
 // get Edit HTML to be displayed for a card
 function getEditButton(id)
 {
-   return '<div style="display:inline-block;width:66%;font-size:8pt;white-space:nowrap;text-align:right" onClick="getEditCardScreen(\''+id+'\')" id="EDIT'+id+'">'+
+   return '<div style="display:inline-block;float:right" onClick="getEditCardScreen(\''+id+'\')" id="EDIT'+id+'">'+
              'Edit'+
           '</div>';
 }
@@ -464,8 +457,8 @@ function displayContactActionButtons()
         $('#EMAIL_SECTION').html(
           '<div class="scan_btn" onClick="toggleDisplay(\'EMAIL_FORM\')">Send contact info to ...</div>'+
           '<div id="EMAIL_FORM" class="hidden_details smallbox">'+
-             '<input style="margin:5px;padding:10px;width:90%" id="EMAIL_ADDRESS" placeholder="Your email address" value="'+email_address+'" />'+
-             '<SELECT name="email_format" style="margin:5px;padding:10px" id="FORMAT_CHOICES">'+
+             '<input id="EMAIL_ADDRESS" placeholder="Your email address" value="'+email_address+'" />'+
+             '<SELECT name="email_format" id="FORMAT_CHOICES">'+
                   '<option value="">Choose format</option>'+
                   '<option value="vcf">VCARD (Outlook Contact)</option>'+
                   '<option value="csv">CSV (spreadsheet)</option>'+
