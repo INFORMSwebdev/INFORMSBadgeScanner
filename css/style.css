@@ -16,24 +16,23 @@ button {
   white-space:normal;
   border-width:0;
 }
-
 h3, h4 {
    font-weight:normal;
 }
-
 a {
    text-decoration:none;
 }
-
 .ui-btn {
    text-align:left;
    text-shadow:none;
    margin:0;
 }
+.ui-btn-right, .ui-btn-left {
+   padding-top: 40px;
+}
 .ui-link, div {
    text-shadow:none;
 }
-
 .ui-btn.category {
    text-align: left;
    text-shadow:none;
@@ -60,7 +59,7 @@ a {
 
 .ui-page { background:#f07602; color:white;}
 .ui-content { padding:0px; }
-.ui-header { text-align: center; }
+.ui-header { padding-top:20px; }
 .ui-footer .ui-btn { height:inherit; white-space:normal;}
 
 .pageheader {
