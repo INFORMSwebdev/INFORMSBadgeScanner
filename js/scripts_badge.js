@@ -301,7 +301,6 @@ function getEditCardScreen(id)
         if( row.email == NA ) email = '';
 
         display += "<div id='editmsg'></div>"+
-          "<div>"+
             "<h2>"+row.first_name+' '+row.last_name+"</h2>"+
             "<div>EMAIL:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"email\", this.value)' value='"+email+"'></div>"+
             "<div>ORGANIZATION:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"organization\", this.value)' value='"+row.organization+"'></div>"+
@@ -310,7 +309,7 @@ function getEditCardScreen(id)
             "<div>STATE:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"state\", this.value)' value='"+row.state+"'></div>"+
             "<div>COUNTRY:</div><div><input type='text' size='30' onBlur='editField(\""+id+"\", \"country\", this.value)' value='"+row.country+"'></div>"+
             "<div>NOTE:</div><div><textarea cols='32' rows='7' onBlur='editField(\""+id+"\", \"note\", this.value)'>"+row.note+"</textarea></div>"+
-          "</div>";
+          "<a href='index.html' class='ui-btn ui-btn-inline'>SAVE AND RETURN</a>";
         $('#editform').html(display);
       }
       else gotopage('main_page');
