@@ -28,7 +28,7 @@ a {
    margin:0;
 }
 .ui-btn-right, .ui-btn-left {
-   padding-top: 40px;
+   padding-top: 25px;
 }
 .ui-link, div {
    text-shadow:none;
@@ -59,9 +59,18 @@ a {
 
 .ui-page { background:#f07602; color:white;}
 .ui-content { padding:0px; }
-.ui-header { padding-top:20px; }
+.ui-header { margin-top:20px; }
 .ui-footer .ui-btn { height:inherit; white-space:normal;}
 
+#EMAIL_ADDRESS {
+  margin:5px;
+  padding:10px;
+  width:90%;
+}
+#FORMAT_CHOICES {
+  margin:5px;
+  padding:10px;
+}
 .pageheader {
   text-align: center;
   margin:-1px 0;
@@ -317,7 +326,6 @@ a {
 .hidden_details {
    display:none;
    padding:10px;
-   border: 4px solid #073585;
    background-color:white;
 }
 .results {
