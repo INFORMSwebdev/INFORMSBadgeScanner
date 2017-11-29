@@ -19,7 +19,7 @@
     
     <preference name='phonegap-version' value='cli-6.5.0' />
 
-    <plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.0" />
+    <plugin name="phonegap-plugin-barcodescanner" source="npm" spec="6.0.0" >
        <param name="CAMERA_USAGE_DESCRIPTION" value="Camera is used for scanning QR Codes." />
        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App does not access the library." />
     </plugin>
