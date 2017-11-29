@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "org.informs.badgescanner"
+        id          = "org.informs.vendorqr"
         versionCode = "14"
         version     = "1.0.0" >
 
@@ -26,6 +26,10 @@
        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App does not access the library." />
     </plugin>
 
+    <plugin name="cordova-plugin-camera">
+       <param name="CAMERA_USAGE_DESCRIPTION" value="Camera is used for scanning QR Codes." />
+       <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App does not access the library." />
+    </plugin>
 <!-- ICONS -->
 
     <icon src="icon.png" />
