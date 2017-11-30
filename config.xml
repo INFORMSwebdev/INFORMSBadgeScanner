@@ -2,15 +2,15 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "org.informs.badgescanner"
-        versionCode = "14"
+        versionCode = "15"
         version     = "1.0.3" >
 
     <!-- versionCode is optional and Android only -->
 
-    <name>INFORMS Badge Reader</name>
+    <name>INFORMS Badge Scanner</name>
 
     <description>
-        PhoneGap Build config for INFORMS Badge Reader, which can scan INFORMS attendee badge QR codes and extract their contact information.
+        PhoneGap Build config for INFORMS Badge Scanner, which can scan INFORMS attendee badge QR codes and extract their contact information.
     </description>
 
     <author href="https://www.informs.org" email="informs@informs.org">
